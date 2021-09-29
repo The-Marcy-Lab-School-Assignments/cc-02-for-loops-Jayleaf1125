@@ -31,21 +31,19 @@ function countEveryOdd(number){
 }
 
 //5 
-// function countEvens(numbers){
-//     const listEven = [];
-//   for(let i = 0; i <= numbers; i++) {
-//       if (i % 2 !== 0) {
-//           const num = numbers[i];
-//           const result = num;
-//           listEven.push(result);
-//       }
-//   }
-//   return listEven;
-// }
+function countEvens(numbers){
+    let count = 0;
+  for(let i = 0; i <= numbers.length; i++) {
+      if (numbers[i] % 2 === 0) {
+          count++;
+      }
+  }
+ return count;
+}
 
 // Call
 // countToTen();
 // countFromOne(20);
 // countEveryEven(18);
 // countEveryOdd(35);
-// console.log(countEvens([1,2,3,4,5,6,7,8,9,12]));
+console.log(countEvens([1,3,7,17,19]));
